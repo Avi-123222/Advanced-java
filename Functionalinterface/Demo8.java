@@ -1,0 +1,14 @@
+@FunctionalInterface
+interface X1{
+	void call();
+}
+public class Demo8{
+	public static void main(String args[]){
+		X1 ab = new Demo8()::display;
+		ab.call();//i call the call() method of x1 interface
+	}
+	public void display(){
+		System.out.println("I love Java Technocrat");
+	}
+}
+			
